@@ -10,6 +10,7 @@ public:
     {
         publisher_ = this->create_publisher<std_msgs::msg::String>("start", 10);
 
+
         auto publish_message = [this]() -> void {
             auto message = std_msgs::msg::String();
             message.data = "Hello, World,i am start!!!!";
