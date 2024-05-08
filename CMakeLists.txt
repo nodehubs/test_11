@@ -29,14 +29,14 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
 # Add executable
-add_executable(end src/end.cpp)
+add_executable(test_11 src/start.cpp)
 
 # Link against libraries
-ament_target_dependencies(end rclcpp std_msgs)
+ament_target_dependencies(test_11 rclcpp std_msgs)
 
 # Install executable
 install(TARGETS
-end
+test_11
   DESTINATION lib/${PROJECT_NAME}
 )
 
